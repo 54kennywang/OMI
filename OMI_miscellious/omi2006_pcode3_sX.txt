@@ -1,0 +1,3 @@
+Each file represent a given algorithm for combining OMI records:
+S2: is combination of all OMI records with one PCODE3 options. These records have highest confidence - check how many of our patients are not covered
+S4: is combination of all OMI records based on first occurance of PCODE3. These records are the best estimate of what we got.

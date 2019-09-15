@@ -1,0 +1,47 @@
+1. don't know how to get Principal component factor score (Factor scores are constructed from the principal component factor analysis.),
+but know what it means (higher values mean more instability) and (It has been demonstrated to be stable across time periods and across different 
+geographic areas)
+2. quintiles were created province-wide to enable comparability across the province. Each group contains a fifth of the geographic units.
+For example, if an area has a value of 5 on the material deprivation scale, it means it is in the most deprived 20 percent of areas in Ontario.
+3. The objectives of your analysis and the methods you are using will determine whether you use factor scores or quintiles in your analysis. 
+For example, a mapping exercise might be best presented using quintiles, whereas a regression model might benefit from the detail of the factor scores.
+4. Summary Score = These steps will produce a score ranging from 1 to 5 where 1 reflects low levels of marginalization and 5 reflects high levels of
+marginalization.
+-----------------------------------------------------------understanding----------------------------------------------------------------------
+6. no need to update PCODE_LINK
+5. proposed average, see email reply
+
+https://www12.statcan.gc.ca/census-recensement/2016/geo/geosearch-georecherche/index-eng.cfm
+
+
+
+uniq_DA_PCODE3.csv | uniq_DA_PCODE6.csv | dups_DA_PCODE3.csv | dups_DA_PCODE6.csv
+
+dups_DA_PCODE3-1.csv | dups_DA_PCODE3-2.csv
+
+dups_DA_PCODE3-1-noDuplicate.csv | dups_DA_PCODE3-2-noDuplicate.csv
+
+dups_DA_PCODE3-noDuplicate-merge.csv -> 13 duplicates
+
+all_DA_PCDE3_noDuplicate_merge.csv -> 30506 duplicates
+
+( PCODE_LINK_compare.csv -> 49227 PCODE3 mismatch (15% mismatch after remove NULL); 52892 rows of NULL => my own PCODE_LINK is wrong, use )
+ 
+all_DA_PCDE3_noDuplicate_merge.csv (MERGE) 2006_PCODE_LINK.csv -> PCODE_LINK_compareALL.csv (64263 PCODE3 mismatch & 49226 rows of NULL)
+
+2016_left_join.csv (empty: 23177 - 168) => average.py => 2016_average.csv ==round(pop & _q_)==> 2016_average_round.csv
+2006_left_join.csv (empty: 22634 - 2730) => average.py => 2006_average.csv ==round(pop & _q_)==> 2006_average_round.csv
+
+-----------------------------------------------slides-------------------------------------------------------
+What is it
+what do other researcher use it for. 
+what can we use it for?
+What's the applicability of this to our team's overall research - 
+check out our papers & abstracts on our website and see what value we can have by factoring for this information on our patients. 
+
+My request:
+Walk through how you handle the 6 postal code to 3 digits. What analysis was done? Did any other teams/institutions do something similar?
+the updates which you've made and how you handled this 6 digit to 3 digit adjustment for our patient dataset
+
+
+
