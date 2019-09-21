@@ -1,0 +1,8 @@
+DAuid
+The DAuid uniquely identifies a dissemination area. It is composed of the two-digit province/territory code, the two-digit census division code and the four-digit dissemination area code.
+
+Many of these postal codesOM tend to straddle several dissemination areas and often cross boundaries of standard geographic areas such as census tracts or census subdivisions. (https://www150.statcan.gc.ca/n1/pub/92-154-g/92-154-g2017001-eng.htm)
+
+
+Table 4.1
+Postal CodeOM Conversion File (PCCF) and Retired 2015 (R2015.txt) record layouts
