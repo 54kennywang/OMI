@@ -3,6 +3,7 @@ import pandas as pd
 import pandas_bokeh
 import matplotlib.pyplot as plt
 import pandas as pd
+import time
 
 def loadData(inputFile):
     # colnames = ['Instability_q_DA16', 'PCODE3']
@@ -28,8 +29,11 @@ df=pd.DataFrame({'PCODE': PCODE3, 'A':Instability_q_DA16})
 # Join ontario dataset with sample data
 new_df=ontario.join(df.set_index('PCODE'), on='CFSAUID')
 
-
+start_time = time.time()
+# category: Specifies the column of the GeoDataFrame that should be used to draw a choropleth map
+# simplify_shapes (~meter) to improve plotting performance. 10000 = 10000m
 new_df.plot_bokeh(simplify_shapes=20000,
                   category="A",
                   colormap="Spectral",
                   hovertool_columns=["CFSAUID","A"])
+print("--- %s seconds ---" % (time.time() - start_time))
